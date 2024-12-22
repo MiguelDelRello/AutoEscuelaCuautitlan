@@ -1,79 +1,19 @@
    
   body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    padding: 0;    
+    margin: 0; /* Elimina el margen por defecto del body */    
+       
 }
 
-.navbar{
-	
-	display: flex;
-	justify-content: flex-end;
-	aling-items: center;
-	padding: 16px 64px;
-	position:realtive;
-	
+.imgFondo{
+	  position:fixed;
+      height: 100%; /* Toda la altura de la ventana */
+      width: 100%;	
+      top: 0; /* Elimina el margen por defecto del body */
+      left: 0;
+      z-index: 0;
 }
-
-.nav-links2{
-    display: none; /* Oculto por defecto */
-    list-style: none;
-    position: absolute; /* Para que se posicione correctamente */
-    background-color: none; /* Color de fondo */
-    z-index: 1; /* Asegúrate de que esté por encima */
-}
-
-
-
-.nav-links2 li{
-	padding: 8px 14px; 
-	
-}
-
-.nav-links{
-	list-style: none;
-    display: flex;
-    transition: all 0.5 ease;
-}
-
-.nav-links a {
-	
-	text-decoration: underline;
-/*	color: #FFFFFF;*/
-	font-size: 17px;
-	padding: 8px 14px; 
-	border-radius: 30px;
-	transition: background-color 0.3s ease;
-	
-}
-
-
-
-.menu-icon{
-display: none;	
-flex-direction: column;
-cursor: pointer;
-margin-left: auto;
-position: realtive;	
-z-index: 1;
-	
-}
-
-
-.menu-icon .line{
-	
-	width: 30px;
-	height: 3px;
-	background-color: white;
-	margin: 5px 0;
-	transition: all 0.3s ease;
-}
-
-#menu-toggle{
-	
-	display: none;
-}
-
 
 
     .grid-container {
@@ -82,10 +22,16 @@ z-index: 1;
       width: 100%;
       display: grid;
       grid-template-areas:
-        'header header header';
-        
-        
-      grid-template-rows: repeat(3 1fr); /* Alturas de las filas */
+        'header header header'
+        'widget-anima widget-anima widget-anima'
+        'widget-carrusel widget-carrusel widget-carrusel'
+        'widget-oferta widget-oferta widget-oferta'
+        'widget-curso1 img-intensivo img-intensivo'
+        'img-fin img-fin widget-curso2'
+        'widget-curso3 img-aprendiz img-aprendiz'
+        'widget-cursos widget-cursos widget-cursos';
+ 
+      grid-template-rows: repeat(8 1fr); /* Alturas de las filas */
       grid-template-columns: reapeat(3, 1fr); /* Anchos de las columnas */
     }
 
@@ -100,104 +46,283 @@ z-index: 1;
 	
 	
 	    .grid-container .header {
-        position: fixed;
+        position: absolute;
         top: 0;
 	    grid-area: header;
-	    height: 120px;
-	    width: 100%; 
+	    height: 300px;
+	    width: 100%;
         display: flex;
+        border: none;
+        overflow: hidden;
+        background-color: none;
         justify-content: space-between;
-        background-color: grey;
+        z-index: 1;
     } 
     
+	    .grid-container .widget-carrusel {
+        position: absolute;
+        top: 600px;
+	    grid-area: widget-carrusel;
+	    height: 200px;
+	    width: 100%;
+        border: none;
+        overflow: hidden;
+        background-color: white;
+        text-align: center;
+        color: #6194b7 ;
+    } 
+
+	    .grid-container .widget-oferta {
+        position: absolute;
+        top: 840px;
+	    grid-area: widget-oferta;
+	    height: 220px;
+	    width: 100%;
+        border: none;
+        overflow: hidden;
+        background-color: #6194b7 ;
+        text-align: center;
+        display: flex;
+        margin: 0;
+    } 
+
+	    .grid-container .widget-oferta p{
+        font-family: "Courier New", monospace;
+        padding: 50px ;
+        width: 600px;
+        letter-spacing: 3px;
+        font-size: 18px;
+        
+    } 
+	    .grid-container .widget-oferta h1{
+        
+         align-items: center;
+         padding: 75px;
+        
+    } 
+
+	    .grid-container .widget-cursos{
+	    position: absolute;
+	    grid-area: widget-cursos;
+	    height: 120px;
+	    width: 100%;
+	    top: 2500px;
+        border: none;
+        background-color: white;
+        color: #6194b7 ;
+        text-align: center;
+	    }
+    
+	    .grid-container .widget-curso1{
+	    position: absolute;
+	    grid-area: widget-curso1;
+	    height: 420px;
+	    width: 100%;
+	    top: 1100px;
+        border: none;
+        overflow: hidden;
+        background-color: white;
+
+    }     
+
+	    .grid-container .widget-curso2{
+	    position: relative;
+	    grid-area: widget-curso2;
+	    height: 470px;
+	    width:100%;
+	    top: 1500px;
+        border: none;
+        overflow: hidden;
+        background-color: white;
+    }     
+
+
+	    .grid-container .widget-curso3{
+	    position: absolute;
+	    grid-area: widget-curso3;
+	    height: 420px;
+	    width: 100%;
+	    top: 2050px;
+        border: none;
+        overflow: hidden;
+        background-color: white;
+
+    }     
+
+
+	    .grid-container .widget-curso2 img{
+        width: 600px;
+	    height: 400px;
+	    box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.4);   
+    }
+
+	    .grid-container .widget-curso3 img{
+	        width: 500px;
+	        height: 400px;
+	        border-radius: 20%;
+	        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+         }
+
+	    .grid-container .img-intensivo {
+	    position: absolute;
+	    grid-area: img-intensivo;
+	    height: 420px;
+	    width: 50%;
+	    right: 0;
+	    top: 1100px;
+        border: none;
+        overflow: hidden;
+        background-color: white;
+        
+    }     
     
     
+     .grid-container .img-aprendiz {
+	    position: absolute;
+	    grid-area: img-intensivo;
+	    height: 420px;
+	    width: 50%;
+	    right: 0;
+	    top: 2050px;
+        border: none;
+        overflow: hidden;
+        background-color: white;
+        
+    }     
     
- @media(max-width: 768px){
- 
- .navbar{
- 	padding: 20px;
- }
- 
- .menu-icon{
- 	display: flex;
- }
- 
- 
- .nav-links{
- 	position: absolute;
- 	top: 10px;
- 	right: 0;
- 	width: 100%;
- 	height: 0;
- 	overflow: hidden;
- 	flex-direction: column;
- 	background-color: none;
- 	text-align: right;
- 	transition: heigth 0.5s ease;
- 	
- }
- 
- 
- 
- .nav-links li
- {
- 	margin: 0;
- 	padding: 5px;
- 	width: 100%;
- 
- }	
- 
- nav-links a{
-	 width: 100%;
- 	padding: 10px 20px;
- 
 
- }
- 
- 
- 
- #menu-toggle:checked + .menu-icon + .nav-links {
- 	height: 200px; 
- 	width: 250px;
- 	padding: 50px ;
- }
+	    .grid-container .img-fin {
+	    position: relative;
+	    grid-area: img-fin;
+	    height: 470px;
+	    top: 1500px;
+        border: none;
+        overflow: hidden;
+        background-color: white;
+        
+    }     
 
 
-
- #menu-toggle:checked + .menu-icon + menu-icon .line:nth-child(1) {
-	transform: rotate(45deg) translate(15px, 3px);
+    
+ 	    .grid-container .img-intensivo,.img-aprendiz h3,p{
+        letter-spacing: 3px;        
+        font-family: "Courier New", monospace;
+ 	  
+ 	    }
+ 	    
+.btnCursos{
 	
+	background-color: rgb(97, 148, 183,0.4 );
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 17px;
+	padding: 8px 14px; 
+	border-radius: 30px;
+	transition: background-color 0.3s ease;
+} 	    
 
- }
-
- #menu-toggle:checked + .menu-icon + menu-icon .line:nth-child(2) {
-	transform: scale(0);
+.btnCursos:hover {
 	
-
- }
-
-
- #menu-toggle:checked + .menu-icon + menu-icon .line:nth-child(3) {
-		transform: rotate(-45deg) translate(15px, -4px);
-
- }
-
- 
- }   
-    
-
-.nav-links a:hover {
-	
-	background-color: green;
+	background-color: #6194b7;
 }
 
-.dropbtn:hover  + .nav-links2,
-.nav-links2:hover {
-    display: flex; /* Muestra el menú desplegable al pasar el mouse */
-    flex-direction: column; /* Asegúrate de que los elementos se apilen verticalmente */
-    right: 125px;  
- 	height: 100px; 
- 	width: 200px;
-    top: 75px;
+ 	    
+.widget-anima{
+	grid-area: widget-anima;
+	position:absolute;
+	top: 300px;
+	z-index: 2;
+	color: white;
+	font-size: 30px;
+	text-align: center;
 }
+
+.titulo2{
+	
+		font-size: 30px;
+    	text-align: center;
+		text-shadow: 2px 8px 16px rgba(0,0,0,0.7);
+}
+
+
+.titulo1{
+	    text-shadow: 2px 8px 16px rgba(0,0,0,0.7); 
+		font-size: 50px;
+    	text-align: center;
+        display: inline-block;
+        border-right: 2px solid black; /* Cursor de la máquina de escribir */
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+        overflow: hidden; /* Oculta el texto que no se ha escrito aún */
+        animation: escribir 4s steps(43, end), parpadeo 0.75s infinite step-end alternate; /* Animación de escritura y parpadeo del cursor */
+  	
+}    
+    
+        @keyframes escribir {
+            from {
+                width: 0; /* Comienza con ancho 0 */
+            }
+            to {
+                width: 100%; /* Termina con el ancho completo del texto */
+            }
+        }
+
+        @keyframes parpadeo {
+            0%, 100% {
+                border-color: transparent; /* Cursor invisible al principio y al final */
+            }
+            50% {
+                border-color: black; /* Cursor visible a la mitad */
+            }
+        } 
+    
+    
+        .imagen {
+            position: absolute; /* Posicionamiento absoluto para la imagen */
+            animation: desplazar 10s ease-in-out infinite; /* Aplicar la animación */
+        }
+
+        @keyframes desplazar {
+            0% {
+                transform: translateX(-100%); /* Comienza fuera de la pantalla a la izquierda */
+            }
+            50% {
+                transform: translateX(calc(5vw - 50px)); /* Se mueve al centro de la pantalla */
+            }
+            100% {
+                transform: translateX(-100%); /* Termina fuera de la pantalla a la derecha */
+            }
+        }    
+    
+    
+         .imagen2 {
+            position: absolute; /* Posicionamiento absoluto para la imagen */
+            animation: desplazar2 7s ease-in-out infinite; /* Aplicar la animación */
+        }   
+    
+        @keyframes desplazar2 {
+            0% {
+                transform: translateX(150%); /* Comienza fuera de la pantalla a la izquierda */
+            }
+            50% {
+                transform: translateX(calc(5vw - 50px)); /* Se mueve al centro de la pantalla */
+            }
+            100% {
+                transform: translateX(150%); /* Termina fuera de la pantalla a la derecha */
+            }
+        }    
+    
+    
+    
+    
+.imgWhats{
+	
+	position: fixed;
+	background-color: none;
+	z-index: 3;
+    width: 70px;
+	height: 70px;
+	bottom: 30px;
+	right: 30px;
+	border-radius: 20px;
+	cursor: pointer;
+}    
