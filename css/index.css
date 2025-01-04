@@ -89,7 +89,7 @@
 	    .grid-container .widget-oferta p{
         font-family: "Courier New", monospace;
         padding: 50px ;
-        width: 600px;
+        width: 100%;
         letter-spacing: 3px;
         font-size: 18px;
         
@@ -235,6 +235,7 @@
 	color: white;
 	font-size: 30px;
 	text-align: center;
+	width: 100%;
 }
 
 .titulo2{
@@ -326,3 +327,55 @@
 	border-radius: 20px;
 	cursor: pointer;
 }    
+
+
+
+
+
+ @media(max-width: 768px){
+ 		
+  
+  .grid-container  .widget-oferta{
+   		display: flex;
+   		flex-direction: column;
+   		gap: 0;
+   	    height: 370px;
+   	    width: 100%;
+   		
+   }
+   
+     .grid-container  .widget-anima{
+   	    width: 100%;
+   	    
+	}  
+     .grid-container  .widget-anima .titulo1{
+ 
+ 	font-size: 17px;
+ 
+   }
+   
+     .grid-container  .widget-anima .titulo2{
+ 
+ 	font-size: 20px;
+ 
+   }
+
+
+  .grid-container  .widget-oferta h1{
+		padding:0;
+	}  
+    .grid-container  .widget-oferta p{
+		padding:0;
+	}  
+  .grid-container .widget-curso1{
+        top: 1600px; 
+  
+  }
+  .grid-container .img-intensivo {
+        top: 1600px; 
+  
+  }
+	
+
+  
+ }
