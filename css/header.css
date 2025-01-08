@@ -72,7 +72,7 @@ z-index: 1;
 
 
     
-    
+/*    
  @media(max-width: 768px){
  
  .navbar{
@@ -145,7 +145,7 @@ z-index: 1;
 
  
  }   
-    
+*/    
 
 .nav-links a:hover {
 	
@@ -156,8 +156,8 @@ z-index: 1;
 .nav-links2:hover {
     display: flex; /* Muestra el menú desplegable al pasar el mouse */
     flex-direction: column; /* Asegúrate de que los elementos se apilen verticalmente */
-    right: 125px;  
+    left: 120px;
  	height: 100px; 
  	width: 200px;
-    top: 75px;
+    top: 58px;
 }

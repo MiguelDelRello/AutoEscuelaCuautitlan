@@ -27,7 +27,7 @@
         'widget-carrusel widget-carrusel widget-carrusel'
         'widget-oferta widget-oferta widget-oferta'
         'widget-curso1 img-intensivo img-intensivo'
-        'img-fin img-fin widget-curso2'
+        'img-fin widget-curso2 widget-curso2'
         'widget-curso3 img-aprendiz img-aprendiz'
         'widget-cursos widget-cursos widget-cursos';
  
@@ -40,7 +40,7 @@
    	.grid-container > div,
 	.grid-container .header,
 	.grid-container .footer {
-		padding: 20px;
+		padding: 0px;
 	
 	}
 	
@@ -58,12 +58,16 @@
         justify-content: space-between;
         z-index: 1;
     } 
+  .grid-container .header .img{
+			width: 170px; 
+			height:170px;	
+      } 
     
 	    .grid-container .widget-carrusel {
         position: absolute;
         top: 600px;
 	    grid-area: widget-carrusel;
-	    height: 200px;
+	    height: 240px;
 	    width: 100%;
         border: none;
         overflow: hidden;
@@ -99,14 +103,16 @@
          align-items: center;
          padding: 75px;
         
+        
     } 
 
 	    .grid-container .widget-cursos{
 	    position: absolute;
 	    grid-area: widget-cursos;
-	    height: 120px;
+	    height: 170px;
 	    width: 100%;
-	    top: 2500px;
+	    top: 2450px;
+	    padding-top: 15px;
         border: none;
         background-color: white;
         color: #6194b7 ;
@@ -116,9 +122,9 @@
 	    .grid-container .widget-curso1{
 	    position: absolute;
 	    grid-area: widget-curso1;
-	    height: 420px;
+	    height: 470px;
 	    width: 100%;
-	    top: 1100px;
+	    top: 1050px;
         border: none;
         overflow: hidden;
         background-color: white;
@@ -128,9 +134,8 @@
 	    .grid-container .widget-curso2{
 	    position: relative;
 	    grid-area: widget-curso2;
-	    height: 470px;
-	    width:100%;
-	    top: 1500px;
+	    height: 510px;
+	    top: 1520px;
         border: none;
         overflow: hidden;
         background-color: white;
@@ -142,7 +147,7 @@
 	    grid-area: widget-curso3;
 	    height: 420px;
 	    width: 100%;
-	    top: 2050px;
+	    top: 2030Px;
         border: none;
         overflow: hidden;
         background-color: white;
@@ -151,8 +156,10 @@
 
 
 	    .grid-container .widget-curso2 img{
-        width: 600px;
-	    height: 400px;
+	    
+	    margin: 100px;
+        width: 450px;
+	    height: 350px;
 	    box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.4);   
     }
 
@@ -166,10 +173,10 @@
 	    .grid-container .img-intensivo {
 	    position: absolute;
 	    grid-area: img-intensivo;
-	    height: 420px;
+	    height: 470px;
 	    width: 50%;
 	    right: 0;
-	    top: 1100px;
+	    top: 1050px;
         border: none;
         overflow: hidden;
         background-color: white;
@@ -180,10 +187,10 @@
      .grid-container .img-aprendiz {
 	    position: absolute;
 	    grid-area: img-intensivo;
-	    height: 420px;
+	    height: 450px;
 	    width: 50%;
 	    right: 0;
-	    top: 2050px;
+	    top: 2000px;
         border: none;
         overflow: hidden;
         background-color: white;
@@ -193,12 +200,13 @@
 
 	    .grid-container .img-fin {
 	    position: relative;
+	    padding: 50px;
 	    grid-area: img-fin;
-	    height: 470px;
-	    top: 1500px;
+	    top: 1520px;
         border: none;
         overflow: hidden;
         background-color: white;
+	    height: 410px;
         
     }     
 
@@ -271,9 +279,6 @@
             0%, 100% {
                 border-color: transparent; /* Cursor invisible al principio y al final */
             }
-            50% {
-                border-color: black; /* Cursor visible a la mitad */
-            }
         } 
     
     
@@ -344,10 +349,8 @@
    		
    }
    
-     .grid-container  .widget-anima{
-   	    width: 100%;
-   	    
-	}  
+  	    
+	
      .grid-container  .widget-anima .titulo1{
  
  	font-size: 17px;
@@ -376,6 +379,41 @@
   
   }
 	
+  .grid-container .header {
+   		display: flex;
+   		flex-direction: column;
+	    align-items: center;
+  	    height: 530px;
+     	z-index: 3;
+  	
+   } 
 
+  .grid-container .header .img{
+			width: 270px; 
+			height:270px;	
+      } 
+
+  .grid-container .header .navbar{
+       top: 0px;
+	
+   } 
+   .widget-anima{
+       top: 400px;
+       background-color: #6194b7 ;
+   	   height: 400px; /* Toda la altura de la ventana */
+	    
+   }
+
+   .widget-anima .titulo1{
+       padding-top: 120px;
+	    
+   }
+ 
+   .grid-container .widget-carrusel {
+      top:800px;	      
+   } 
+   .grid-container .widget-oferta {
+      top:1040px;	      
+   } 
   
  }
