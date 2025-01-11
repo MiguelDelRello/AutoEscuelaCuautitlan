@@ -133,13 +133,15 @@
     }     
 
 	    .grid-container .widget-curso2{
-	    position: relative;
+	    position: absolute;
 	    grid-area: widget-curso2;
 	    height: 510px;
 	    top: 1520px;
         border: none;
         overflow: hidden;
         background-color: white;
+        width: 50%;
+        right: 0;
     }     
 
 
@@ -182,7 +184,7 @@
         border: none;
         overflow: hidden;
         background-color: white;
-        
+ 	    padding: 30px;       
     }     
     
     
@@ -201,21 +203,23 @@
     }     
     
 
-	    .grid-container .img-fin {
-	    position: relative;
-	    padding: 50px;
+	    .grid-container .img-fin {   /* texto */
+	    position: absolute;
 	    grid-area: img-fin;
 	    top: 1520px;
         border: none;
         overflow: hidden;
         background-color: white;
-	    height: 410px;
-        
+	    height: 510px;
+        width: 50%;
+        left: 0;
+	    padding: 50px;
+                
     }     
 
 
     
- 	    .grid-container .img-intensivo,.img-aprendiz h3,p{
+ 	    .grid-container .img-intensivo,.img-aprendiz,.img-fin h3,p{
         letter-spacing: 3px;        
         font-family: "Courier New", monospace;
  	  
@@ -382,27 +386,50 @@
         top: 1900px; 
         height: 350px;
         width: 100%;
-  }
-    
+	    text-align: center;
+  }	        
   
     .grid-container .widget-curso2{
-        top: 2650px; 
+    	padding :0;
+    	margin: 0;
+        top: 2250px;
+        left:0;
         width: 100%;
-  }
-      .grid-container .img-fin{
-        padding-top: 0;
-        top: 2250px; 
-        width: 100%;
-        height: 350px;
+	    height: 430px;  
+        
   }
   
+	    .grid-container .widget-curso2 img{
+	    
+	    margin: 30px;
+        width: 420px;
+	    height: 350px;  
+	    }
+	    
+	    
+      .grid-container .img-fin{
+        top: 2680px; 
+        width: 78.5%;
+        left: 0;
+        height: 300px;
+        text-align: center;
+         
+        }
 
     .grid-container .widget-curso3{
-        top: 4550px; 
-  
+        top: 3050px; 
+        width: 100%;
   }
       .grid-container .img-aprendiz{
-        top: 3550px; 
+        top: 3470px; 
+  	    width: 78.5%;
+	    text-align: center;
+	    left:0;	
+        height: 300px;
+}
+
+    .grid-container .widget-cursos{
+        top: 3770px; 
   
   }
 
@@ -444,11 +471,10 @@
       top:1090px;	      
    } 
 
-    .grid-container .widget-cursos{
-        top: 4550px; 
-  
-  }
 
-
+.imgFondo{
+      height: 400px; /* Toda la altura de la ventana */
+      width: 100%;	
+}
   
  }
