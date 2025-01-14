@@ -26,13 +26,15 @@
         'widget-anima widget-anima widget-anima'
         'widget-carrusel widget-carrusel widget-carrusel'
         'widget-oferta widget-oferta widget-oferta'
-        'widget-curso1 img-intensivo img-intensivo'
+        'widget-curso1 widget-curso1 img-intensivo'
         'img-fin widget-curso2 widget-curso2'
         'widget-curso3 img-aprendiz img-aprendiz'
-        'widget-cursos widget-cursos widget-cursos';
+        'widget-cursos widget-cursos widget-cursos'
+        'reseña1 reseña2 reseña3'
+        ;
  
-      grid-template-rows: repeat(8 1fr); /* Alturas de las filas */
-      grid-template-columns: reapeat(3, 1fr); /* Anchos de las columnas */
+      grid-template-rows: auto; /* Alturas de las filas */
+      grid-template-columns: auto; /* Anchos de las columnas */
     }
 
     
@@ -46,11 +48,8 @@
 	
 	
 	    .grid-container .header {
-        position: absolute;
-        top: 0;
 	    grid-area: header;
 	    height: 300px;
-	    width: 100%;
         display: flex;
         border: none;
         overflow: hidden;
@@ -64,36 +63,28 @@
       } 
     
 	    .grid-container .widget-carrusel {
-        position: absolute;
-        top: 600px;
 	    grid-area: widget-carrusel;
-	    height: 240px;
-	    width: 100%;
         border: none;
         overflow: hidden;
         background-color: white;
         text-align: center;
         color: #6194b7 ;
+        z-index: 2;
+        height: 250px;                
     } 
 
 	    .grid-container .widget-oferta {
-        position: absolute;
-        top: 840px;
 	    grid-area: widget-oferta;
-	    height: 220px;
-	    width: 100%;
         border: none;
         overflow: hidden;
         background-color: #6194b7 ;
         text-align: center;
-        display: flex;
-        margin: 0;
+        height: 250px;
+        z-index: 2;        
     } 
 
 	    .grid-container .widget-oferta p{
         font-family: "Courier New", monospace;
-        padding: 50px ;
-        width: 100%;
         letter-spacing: 3px;
         font-size: 18px;
         
@@ -101,67 +92,51 @@
 	    .grid-container .widget-oferta h1{
         
          align-items: center;
-         padding: 75px;
         
         
     } 
 
 	    .grid-container .widget-cursos{
-	    position: absolute;
 	    grid-area: widget-cursos;
-	    height: 170px;
-	    width: 100%;
-	    top: 2450px;
 	    padding-top: 15px;
         border: none;
         background-color: white;
         color: #6194b7 ;
         text-align: center;
+        z-index: 2;                
 	    }
     
 	    .grid-container .widget-curso1{
-	    
-	    position: absolute;
 	    grid-area: widget-curso1;
-	    height: 470px;
-	    width: 100%;
-	    top: 1050px;
         border: none;
+        height: 450px;
         overflow: hidden;
         background-color: white;
-
+        z-index: 2;        
     }     
 
 	    .grid-container .widget-curso2{
-	    position: absolute;
 	    grid-area: widget-curso2;
-	    height: 510px;
-	    top: 1520px;
         border: none;
         overflow: hidden;
         background-color: white;
-        width: 50%;
-        right: 0;
+        z-index: 2;                
     }     
 
 
 	    .grid-container .widget-curso3{
-	    position: absolute;
 	    grid-area: widget-curso3;
-	    height: 420px;
-	    width: 100%;
-	    top: 2030Px;
         border: none;
         overflow: hidden;
         background-color: white;
-
+        padding: 50px;
+        z-index: 2;        
     }     
 
 
 	    .grid-container .widget-curso2 img{
 	    
 	    margin: 100px;
-        width: 450px;
 	    height: 350px;
 	    box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.4);   
     }
@@ -174,47 +149,35 @@
          }
 
 	    .grid-container .img-intensivo {
-	    padding-top: 100px;
-	    position: absolute;
 	    grid-area: img-intensivo;
-	    height: 470px;
-	    width: 50%;
-	    right: 0;
-	    top: 1050px;
         border: none;
         overflow: hidden;
         background-color: white;
- 	    padding: 30px;       
+ 	    padding-right: 80px;     
+ 	    padding-top: 80px;     
+        z-index: 2;         	      
     }     
     
     
      .grid-container .img-aprendiz {
-	    position: absolute;
-	    padding: 50px;
-	    grid-area: img-intensivo;
-	    height: 450px;
-	    width: 50%;
-	    right: 0;
-	    top: 2000px;
+	    grid-area: img-aprendiz;
         border: none;
         overflow: hidden;
         background-color: white;
-        
+        padding: 50px;
+        z-index: 2;   
+        height: 370px;
+                     
     }     
     
 
 	    .grid-container .img-fin {   /* texto */
-	    position: absolute;
 	    grid-area: img-fin;
-	    top: 1520px;
         border: none;
         overflow: hidden;
         background-color: white;
-	    height: 510px;
-        width: 50%;
-        left: 0;
-	    padding: 50px;
-                
+ 	    padding: 50px;
+        z-index: 2;                        
     }     
 
 
@@ -234,6 +197,7 @@
 	padding: 8px 14px; 
 	border-radius: 30px;
 	transition: background-color 0.3s ease;
+	z-index: 2;        
 } 	    
 
 .btnCursos:hover {
@@ -244,13 +208,10 @@
  	    
 .widget-anima{
 	grid-area: widget-anima;
-	position:absolute;
-	top: 300px;
 	z-index: 2;
 	color: white;
 	font-size: 30px;
 	text-align: center;
-	width: 100%;
 }
 
 .titulo2{
@@ -272,7 +233,50 @@
         animation: escribir 4s steps(43, end), parpadeo 0.75s infinite step-end alternate; /* Animación de escritura y parpadeo del cursor */
   	
 }    
-    
+
+
+    .grid-container .widget-cursos h2{
+        padding-top: 60px;
+        font-size: 40px; 
+  }
+
+
+    .grid-container .reseña1{
+        grid-area: reseña1;
+        background-color: white;
+        z-index: 2;   
+        border: 1px solid black; /* Asegúrate de especificar el tipo de borde */
+    	margin:20px;
+        padding: 20px;
+  	    text-align: center;
+             
+  }
+
+    .grid-container .reseña2{
+	    grid-area: reseña2;
+        background-color: white;
+        z-index: 2;
+        border: 1px solid black; /* Asegúrate de especificar el tipo de borde */
+    	margin:20px;
+        padding: 20px; 	
+   	    text-align: center;
+        
+      }
+      
+      
+    .grid-container .reseña3{
+        grid-area: reseña3;
+        background-color: white;
+    	z-index: 2;
+    	border: 1px solid black; /* Asegúrate de especificar el tipo de borde */
+    	margin:20px;
+        padding: 20px;
+  	    text-align: center;
+
+     }
+
+
+
         @keyframes escribir {
             from {
                 width: 0; /* Comienza con ancho 0 */
@@ -346,8 +350,8 @@
 
  @media(max-width: 768px){
  		
-  
   .grid-container  .widget-oferta{
+        position: absolute;
    		display: flex;
    		flex-direction: column;
    		gap: 0;
@@ -355,8 +359,15 @@
    	    width: 100%;
    		
    }
+ 
+     .grid-container  .widget-carrusel{
+       position: absolute;
+}  	     
    
-  	    
+   
+     .grid-container  .widget-anima{
+       position: absolute;
+}  	    
 	
      .grid-container  .widget-anima .titulo1{
  
@@ -378,60 +389,65 @@
 		padding:0;
 	}  
   .grid-container .widget-curso1{
+  		position: absolute;	
         top: 1460px; 
+        width: 100%;
   
   }
   .grid-container .img-intensivo {
-        padding: 0;
+        position: absolute;
         top: 1900px; 
         height: 350px;
-        width: 100%;
-	    text-align: center;
+        padding: 50px;
+  	    text-align: center;
   }	        
   
     .grid-container .widget-curso2{
-    	padding :0;
-    	margin: 0;
-        top: 2250px;
-        left:0;
+       position: absolute;
+        top: 2300px;
         width: 100%;
 	    height: 430px;  
+        text-align: center;
         
   }
   
-	    .grid-container .widget-curso2 img{
-	    
-	    margin: 30px;
-        width: 420px;
-	    height: 350px;  
+	    .grid-container .widget-curso2 img{	        
+	        margin:20px;
+	        text-align: center;
+	        width: 420px;
+	        height: 350px;  
 	    }
 	    
 	    
       .grid-container .img-fin{
+        position: absolute;
         top: 2680px; 
-        width: 78.5%;
-        left: 0;
         height: 300px;
         text-align: center;
          
         }
 
     .grid-container .widget-curso3{
+        position: absolute;
         top: 3050px; 
-        width: 100%;
+        height: 370px;
+        width: 78.5%;
   }
       .grid-container .img-aprendiz{
-        top: 3470px; 
-  	    width: 78.5%;
+        position: absolute;
+        top: 3520px; 
 	    text-align: center;
-	    left:0;	
-        height: 300px;
+	    height: 300px;
 }
 
     .grid-container .widget-cursos{
+        position: absolute;
         top: 3770px; 
-  
+  	    height: 300px;
+  	    text-align: center;
+        width: 100%; 	    
   }
+
 
  	
   .grid-container .header {
@@ -466,15 +482,32 @@
  
    .grid-container .widget-carrusel {
       top:850px;	      
+      width: 100%;
    } 
    .grid-container .widget-oferta {
       top:1090px;	      
    } 
 
 
+   .grid-container .reseña1 {
+  position: absolute;	
+} 
+   .grid-container .reseña2 {
+  position: absolute;	
+} 
+   .grid-container .reseña3 {
+  position: absolute;	
+} 
+
+
+
 .imgFondo{
-      height: 400px; /* Toda la altura de la ventana */
-      width: 100%;	
+      height: 100%; /* Toda la altura de la ventana */
+      width: 100%;
+      	
 }
+
+  
+
   
  }
