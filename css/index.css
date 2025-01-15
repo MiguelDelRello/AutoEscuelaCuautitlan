@@ -31,6 +31,7 @@
         'widget-curso3 img-aprendiz img-aprendiz'
         'widget-cursos widget-cursos widget-cursos'
         'reseña1 reseña2 reseña3'
+        'footer footer footer'
         ;
  
       grid-template-rows: auto; /* Alturas de las filas */
@@ -275,6 +276,12 @@
 
      }
 
+.img-res{
+	width: 70px;
+	height: 70px;
+    border-radius: 60px;
+}
+
 
 
         @keyframes escribir {
@@ -344,10 +351,42 @@
 	cursor: pointer;
 }    
 
+        .estrella {
+            width: 30px; /* Ancho de la estrella */
+            height: 30px; /* Alto de la estrella */
+            background-color: yellow; /* Color de la estrella */
+            clip-path: polygon(
+                50% 0%, 
+                61% 35%, 
+                98% 35%, 
+                68% 57%, 
+                79% 91%, 
+                50% 70%, 
+                21% 91%, 
+                32% 57%, 
+                2% 35%, 
+                39% 35%
+            ); /* Forma de la estrella */
+        }
 
 
-
-
+.estrellas{
+            display: flex; /* Usar flexbox para alinear los elementos en línea */
+            justify-content: center; /* Centrar los elementos horizontalmente */
+            margin: 20px; /* Margen alrededor del contenedor */
+        }
+        
+.grid-container .footer{
+	grid-area: footer;
+	bottom: 0;
+	height: 100px;
+    z-index: 2;
+    background-color: #6194b7 ;
+    text-align: center;
+    
+    
+}        
+        
  @media(max-width: 768px){
  		
   .grid-container  .widget-oferta{
@@ -490,13 +529,19 @@
 
 
    .grid-container .reseña1 {
-  position: absolute;	
+   top: 4100px;
+  position: absolute;
+  height: 300px;	
 } 
    .grid-container .reseña2 {
+   top: 4470px;
   position: absolute;	
+    height: 300px;	
 } 
    .grid-container .reseña3 {
-  position: absolute;	
+   top: 4850px;
+  position: absolute;
+    height: 300px;		
 } 
 
 
@@ -507,7 +552,9 @@
       	
 }
 
-  
+.grid-container .footer{
+	top: 5100px;
+}  
 
   
  }
