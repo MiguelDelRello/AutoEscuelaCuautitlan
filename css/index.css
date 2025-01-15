@@ -31,6 +31,7 @@
         'widget-curso3 img-aprendiz img-aprendiz'
         'widget-cursos widget-cursos widget-cursos'
         'reseña1 reseña2 reseña3'
+        'logo contacto cursos'
         'footer footer footer'
         ;
  
@@ -276,6 +277,51 @@
 
      }
 
+
+    .grid-container .logo{
+        grid-area: logo;
+        padding-top: 60px;
+        text-align: center;
+        z-index: 2;
+        background-color: white;
+        
+    }
+    
+  .grid-container .logo .img{
+			width: 170px; 
+			height:170px;	
+      }    
+    
+    .grid-container .contacto{
+        grid-area: contacto;
+        padding-top: 40px;
+        padding-left: 80px;
+    	z-index: 2;       
+        background-color: white;
+
+    }
+    
+    .grid-container .contacto ul{
+            list-style: none;    	 
+}    
+
+    .grid-container .cursos{
+        grid-area: cursos;
+        padding-top: 40px;
+        padding-left: 80px;
+    	z-index: 2;        
+        background-color: white;
+        list-style: none;
+    }
+
+    .grid-container .cursos ul{
+            list-style: none;    	 
+}    
+
+
+
+
+
 .img-res{
 	width: 70px;
 	height: 70px;
@@ -382,9 +428,7 @@
 	height: 100px;
     z-index: 2;
     background-color: #6194b7 ;
-    text-align: center;
-    
-    
+    text-align: center;   
 }        
         
  @media(max-width: 768px){
@@ -470,7 +514,7 @@
         position: absolute;
         top: 3050px; 
         height: 370px;
-        width: 78.5%;
+        width: 81%;
   }
       .grid-container .img-aprendiz{
         position: absolute;
@@ -552,8 +596,42 @@
       	
 }
 
+
+
+   .grid-container .logo {
+     top: 5280px;
+     width: 100%;
+     position: absolute;
+     height: 300px;		    
+     text-align: center; 
+} 
+
+   .grid-container .contacto {
+     top: 5600px;
+     position: absolute;
+     height: 300px;
+     padding: 0px;		
+     width: 100%;
+     text-align: center;     
+} 
+
+   .grid-container .cursos {
+     top: 5900px;
+     position: absolute;
+     height: 300px;		
+     padding: 0;		
+     width: 100%;
+     text-align: center;
+} 
+
+
+
+
+
 .grid-container .footer{
-	top: 5100px;
+	position:absolute;
+	top: 6200px;
+
 }  
 
   
