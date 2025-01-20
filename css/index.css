@@ -432,6 +432,12 @@
 }        
         
  @media(max-width: 768px){
+ 
+   .imagen2 {
+     position: absolute; /* Posicionamiento absoluto para la imagen */
+     animation: desplazar 7s ease-in-out infinite; /* Aplicar la animación */
+ } 
+ 
  		
   .grid-container  .widget-oferta{
         position: absolute;
