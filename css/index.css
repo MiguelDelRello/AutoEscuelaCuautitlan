@@ -131,9 +131,15 @@
         border: none;
         overflow: hidden;
         background-color: white;
-        padding: 50px;
+        padding-top: 50px;
         z-index: 2;        
     }     
+
+
+    .grid-container .widget-cursos h2{
+        padding-top: 60px;
+        font-size: 40px; 
+  }
 
 
 	    .grid-container .widget-curso2 img{
@@ -237,10 +243,6 @@
 }    
 
 
-    .grid-container .widget-cursos h2{
-        padding-top: 60px;
-        font-size: 40px; 
-  }
 
 
     .grid-container .reseña1{
@@ -374,7 +376,7 @@
                 transform: translateX(150%); /* Comienza fuera de la pantalla a la izquierda */
             }
             50% {
-                transform: translateX(calc(5vw - 50px)); /* Se mueve al centro de la pantalla */
+                transform: translateX(calc(2vw - 40px)); /* Se mueve al centro de la pantalla */
             }
             100% {
                 transform: translateX(150%); /* Termina fuera de la pantalla a la derecha */
@@ -434,12 +436,18 @@
 }        
         
  @media(max-width: 768px){
- 
-   .imagen2 {
-     position: absolute; /* Posicionamiento absoluto para la imagen */
-     animation: desplazar 7s ease-in-out infinite; /* Aplicar la animación */
- } 
- 
+
+         @keyframes desplazar2 {
+            0% {
+                transform: translateX(150%); /* Comienza fuera de la pantalla a la izquierda */
+            }
+            50% {
+                transform: translateX(-50%); /* Se mueve al centro de la pantalla */
+            }
+            100% {
+                transform: translateX(150%); /* Termina fuera de la pantalla a la derecha */
+            }
+        }    
  		
   .grid-container  .widget-oferta{
         position: absolute;
@@ -521,9 +529,13 @@
     .grid-container .widget-curso3{
         position: absolute;
         top: 3050px; 
-        height: 370px;
-        width: 81%;
-  }
+        height: 420px;
+        width:100%;
+        text-align: center; 
+       }
+  
+  
+  
       .grid-container .img-aprendiz{
         position: absolute;
         top: 3520px; 
