@@ -383,7 +383,9 @@
     
     
     
-    
+.imgFace, .imgInsta{
+	cursor: pointer;
+   } 
 .imgWhats{
 	
 	position: fixed;
@@ -425,7 +427,7 @@
 .grid-container .footer{
 	grid-area: footer;
 	bottom: 0;
-	height: 100px;
+	height: 150px;
     z-index: 2;
     background-color: #6194b7 ;
     text-align: center;   
