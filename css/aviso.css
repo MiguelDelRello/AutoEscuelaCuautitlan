@@ -1,0 +1,218 @@
+   
+  body {
+    font-family: Arial, sans-serif;
+    padding: 0;    
+    margin: 0; /* Elimina el margen por defecto del body */    
+       
+}
+
+
+    .grid-container {
+      margin: 0;
+      height: 100%; /* Toda la altura de la ventana */
+      width: 100%;
+      display: grid;
+      grid-template-areas:
+        'header header'
+        'widget-descripcion widget-descripcion'
+        'widget-nota widget-nota'
+        'widget-carrusel widget-carrusel'
+        'logo  contacto'
+        'footer footer'
+        ;
+        
+      grid-template-rows: auto; /* Alturas de las filas */
+      grid-template-columns: auto; /* Anchos de las columnas */
+
+}
+
+	    .grid-container .header {
+	    grid-area: header;
+	    height: 190px;
+        display: flex;
+        border: none;
+        overflow: hidden;
+        background-color: none;
+        justify-content: space-between;
+        z-index: 2;
+    } 
+  .grid-container .header .img{
+			width: 170px; 
+			height:170px;	
+      } 
+       
+      
+             
+  .grid-container .widget-descripcion{
+            padding: 60px;
+            font-family: "Courier New", monospace;
+            grid-area: widget-descripcion;
+            z-index: 1;
+            background-color: white;
+      }
+      
+       
+  .grid-container .widget-descripcion h1{
+            color: #6194b7 ;
+            text-decoration: underline;
+      }
+      
+      
+  .grid-container .widget-nota{
+            grid-area: widget-nota;
+            padding: 0 50px 0 50px;
+            border-top: 1px solid grey;
+            border-bottom: 1px solid grey;
+            background-color: white;
+            z-index: 2;
+      }
+      
+  .grid-container .widget-carrusel {
+		    grid-area: widget-carrusel;
+	        border: none;
+	        overflow: hidden;
+	        background-color: white;
+	        text-align: center;
+	        color: #6194b7 ;
+	        z-index: 2;
+	        height: 250px;                
+	    } 
+      
+
+    .grid-container .logo{
+        grid-area: logo;
+        padding-top: 60px;
+        text-align: center;
+        z-index: 2;
+        background-color: white;
+        border-top: 1px solid grey;
+    }
+    
+  .grid-container .logo .img{
+			width: 170px; 
+			height:170px;	
+      }    
+    
+    .grid-container .contacto{
+        grid-area: contacto;
+        display: flex;
+        padding-right:130px;
+        justify-content: space-between;
+    	z-index: 2;       
+        background-color: white;
+        border-top: 1px solid grey;        
+
+    }
+    
+    .grid-container .contacto ul{
+            list-style: none;    	 
+}    
+
+
+
+    .grid-container .footer{
+		grid-area: footer;
+		bottom: 0;
+		height: 150px;
+	    z-index: 2;
+	    background-color: #6194b7 ;
+	    text-align: center;   
+	}              
+	
+.imgFace, .imgInsta{
+	cursor: pointer;
+   } 
+.imgWhats{
+	
+	position: fixed;
+	background-color: none;
+	z-index: 3;
+    width: 70px;
+	height: 70px;
+	bottom: 30px;
+	right: 30px;
+	border-radius: 20px;
+	cursor: pointer;
+}    
+      
+      
+      
+  @media(max-width: 768px){
+ 	  .grid-container {
+      margin: 0;
+      height: 100%; /* Toda la altura de la ventana */
+      width: 100%;
+      display: grid;
+      grid-template-areas:
+        'header'
+        'widget-descripcion'
+        'img-curso'
+        'widget-nota' 
+        'widget-carrusel'
+        'logo'  
+        'contacto'
+        'footer'
+        ;
+        
+      grid-template-rows: auto; /* Alturas de las filas */
+      grid-template-columns: auto; /* Anchos de las columnas */
+
+}
+
+
+  .grid-container .header {
+   		display: flex;
+   		flex-direction: column;
+	    align-items: center;
+  	    height: 530px;
+     	z-index: 3;
+  	
+   } 
+
+  .grid-container .header .img{
+			width: 270px; 
+			height:270px;	
+      } 
+
+  .grid-container .header .navbar{
+       top: 0px;
+	
+   } 
+
+
+  .grid-container .img-curso img{
+            
+	        width: 390px;
+	        height: 310px;  
+      } 
+
+    .grid-container .img-curso{
+  	    text-align: center;
+
+	}
+
+    .grid-container .widget-descripcion{
+  	    text-align: center;
+
+	}
+	
+    .grid-container .logo{
+    
+   	    text-align: center;
+}	
+    .grid-container .contacto{
+        padding: 0;
+  	    text-align: center;
+        display: block;
+        justify-content: none;
+        border-top: none;        
+
+    }
+.imgFondo{
+      height: 100%; /* Toda la altura de la ventana */
+      width: 100%;
+      	
+}
+
+
+ }     
