@@ -185,12 +185,13 @@
       width: 100%;
       display: grid;
       grid-template-areas:
-        'header'
-        'widget-descripcion'
-        'img-curso'
-        'widget-nota' 
+         'header'
+        'widget-contacto'
+        'widget-titulo'
+        'widget-sucursales'
+        'widget-nota'
         'widget-carrusel'
-        'logo'  
+        'logo'
         'contacto'
         'footer'
         ;
@@ -199,6 +200,16 @@
       grid-template-columns: auto; /* Anchos de las columnas */
 
 }
+
+  .grid-container .widget-sucursales{
+            display: block;
+            padding: 70px;		
+  }
+
+
+  .grid-container .widget-sucursales .sucursal{
+            margin: 50px;		
+  }
 
 
   .grid-container .header {
@@ -232,10 +243,6 @@
 
 	}
 
-    .grid-container .widget-descripcion{
-  	    text-align: center;
-
-	}
 	
     .grid-container .logo{
     
