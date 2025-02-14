@@ -595,15 +595,15 @@
    .grid-container .reseña1 {
    top: 4100px;
   position: absolute;
-  height: 300px;	
+  height: 400px;	
 } 
    .grid-container .reseña2 {
-   top: 4470px;
+   top: 4570px;
   position: absolute;	
     height: 300px;	
 } 
    .grid-container .reseña3 {
-   top: 4850px;
+   top: 4950px;
   position: absolute;
     height: 300px;		
 } 
@@ -619,7 +619,7 @@
 
 
    .grid-container .logo {
-     top: 5280px;
+     top: 5380px;
      width: 100%;
      position: absolute;
      height: 300px;		    
@@ -627,7 +627,7 @@
 } 
 
    .grid-container .contacto {
-     top: 5600px;
+     top: 5700px;
      position: absolute;
      height: 300px;
      padding: 0px;		
@@ -636,7 +636,7 @@
 } 
 
    .grid-container .cursos {
-     top: 5900px;
+     top: 6000px;
      position: absolute;
      height: 300px;		
      padding: 0;		
@@ -650,7 +650,7 @@
 
 .grid-container .footer{
 	position:absolute;
-	top: 6200px;
+	top: 6300px;
 
 }  
 
