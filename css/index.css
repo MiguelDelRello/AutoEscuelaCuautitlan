@@ -235,10 +235,10 @@
 		font-size: 50px;
     	text-align: center;
         display: inline-block;
-        border-right: 2px solid black; /* Cursor de la máquina de escribir */
-        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-        overflow: hidden; /* Oculta el texto que no se ha escrito aún */
-        animation: escribir 4s steps(43, end), parpadeo 0.75s infinite step-end alternate; /* Animación de escritura y parpadeo del cursor */
+        border-right: 2px solid black; /* Cursor de la m&aacute;quina de escribir */
+        white-space: nowrap; /* Evita que el texto se divida en varias l&iacute;neas */
+        overflow: hidden; /* Oculta el texto que no se ha escrito a&uacute;n */
+        animation: escribir 4s steps(43, end), parpadeo 0.75s infinite step-end alternate; /* Animaci&oacute;n de escritura y parpadeo del cursor */
   	
 }    
 
@@ -249,7 +249,7 @@
         grid-area: reseña1;
         background-color: white;
         z-index: 2;   
-        border: 1px solid black; /* Asegúrate de especificar el tipo de borde */
+        border: 1px solid black; /* Aseg&uacute;rate de especificar el tipo de borde */
     	margin:20px;
         padding: 20px;
   	    text-align: center;
@@ -260,7 +260,7 @@
 	    grid-area: reseña2;
         background-color: white;
         z-index: 2;
-        border: 1px solid black; /* Asegúrate de especificar el tipo de borde */
+        border: 1px solid black; /* Aseg&uacute;rate de especificar el tipo de borde */
     	margin:20px;
         padding: 20px; 	
    	    text-align: center;
@@ -272,7 +272,7 @@
         grid-area: reseña3;
         background-color: white;
     	z-index: 2;
-    	border: 1px solid black; /* Asegúrate de especificar el tipo de borde */
+    	border: 1px solid black; /* Aseg&uacute;rate de especificar el tipo de borde */
     	margin:20px;
         padding: 20px;
   	    text-align: center;
@@ -350,7 +350,7 @@
     
         .imagen {
             position: absolute; /* Posicionamiento absoluto para la imagen */
-            animation: desplazar 10s ease-in-out infinite; /* Aplicar la animación */
+            animation: desplazar 10s ease-in-out infinite; /* Aplicar la animaci&oacute;n */
         }
 
         @keyframes desplazar {
@@ -368,7 +368,7 @@
     
          .imagen2 {
             position: absolute; /* Posicionamiento absoluto para la imagen */
-            animation: desplazar2 7s ease-in-out infinite; /* Aplicar la animación */
+            animation: desplazar2 7s ease-in-out infinite; /* Aplicar la animaci&oacute;n */
         }   
     
         @keyframes desplazar2 {
@@ -421,7 +421,7 @@
 
 
 .estrellas{
-            display: flex; /* Usar flexbox para alinear los elementos en línea */
+            display: flex; /* Usar flexbox para alinear los elementos en l&iacute;nea */
             justify-content: center; /* Centrar los elementos horizontalmente */
             margin: 20px; /* Margen alrededor del contenedor */
         }

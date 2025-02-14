@@ -108,6 +108,11 @@
 			
   }
        
+   .sucursal  h2{
+     color: #6194b7 ;
+  }
+       
+       
   .grid-container .widget-descripcion h1{
             color: #6194b7 ;
             text-decoration: underline;

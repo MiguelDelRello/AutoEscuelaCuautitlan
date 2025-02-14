@@ -16,7 +16,7 @@
     list-style: none;
     position: absolute; /* Para que se posicione correctamente */
     background-color: none; /* Color de fondo */
-    z-index: 1; /* Asegúrate de que esté por encima */
+    z-index: 1; /* Aseg&uacute;rate de que est&eacute; por encima */
 }
 
 
@@ -154,8 +154,8 @@ z-index: 1;
 
 .dropbtn:hover  + .nav-links2,
 .nav-links2:hover {
-    display: flex; /* Muestra el menú desplegable al pasar el mouse */
-    flex-direction: column; /* Asegúrate de que los elementos se apilen verticalmente */
+    display: flex; /* Muestra el men&uacute; desplegable al pasar el mouse */
+    flex-direction: column; /* Aseg&uacute;rate de que los elementos se apilen verticalmente */
     left: 120px;
  	height: 100px; 
  	width: 200px;
