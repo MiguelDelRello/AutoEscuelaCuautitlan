@@ -34,6 +34,13 @@
 
 }
 
+   	.grid-container > div,
+	.grid-container .header,
+	.grid-container .footer {
+		padding: 0px;
+	
+	}
+
 	    .grid-container .header {
 	    grid-area: header;
 	    height: 300px;
