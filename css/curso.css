@@ -225,8 +225,9 @@
 	}
 	
     .grid-container .logo{
-    
-   	    text-align: center;
+     width: 100%;
+     height: 300px;		    
+     text-align: center;
 }	
     .grid-container .contacto{
         padding: 0;
