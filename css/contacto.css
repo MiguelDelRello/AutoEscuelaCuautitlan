@@ -278,6 +278,10 @@
   	    text-align: center;
 
 	}
+  .grid-container .widget-mapa{
+	        width: 250px;
+	        height: 25px;  
+      }
 
 
 
