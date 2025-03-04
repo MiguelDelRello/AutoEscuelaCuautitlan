@@ -227,11 +227,13 @@
   .grid-container .widget-contactos{
             display: block;
             padding: 70px;		
+            width: 100%;
   }
 
   .grid-container .widget-sucursales{
             display: block;
-            padding: 70px;		
+            padding: 70px;
+            width: 100%;		
   }
 
 
@@ -268,7 +270,7 @@
 
     .grid-container .img-curso{
   	    text-align: center;
-
+        width: 100%;
 	}
 
 	
@@ -282,6 +284,8 @@
         display: block;
         justify-content: none;
         border-top: none;        
+        width: 100%;
+
 
     }
 .imgFondo{
