@@ -214,13 +214,13 @@
       display: grid;
       grid-template-areas:
          'header'
- /*       'widget-contacto'
+        'widget-contacto'
         'widget-titulo'
         'widget-contactos'
         'widget-mapa'
         'widget-sucursales'
         'widget-nota'
-        'widget-carrusel'*/
+        'widget-carrusel'
         'logo'
         'contacto'
         'footer'
@@ -232,12 +232,12 @@
 }
 
   .grid-container .widget-contactos{
-            display: block;
+            display: none;
             padding: 70px;
   }
 
   .grid-container .widget-sucursales{
-         display: block;
+         display: none;
         padding: 70px;
   
   }
@@ -279,6 +279,7 @@
 
 	}
   .grid-container .widget-mapa {
+            display:block;
 	        width: 450px;
 	        height: 350px;  
       }
