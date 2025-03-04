@@ -212,13 +212,12 @@
 
   .grid-container .img-curso img{
             
-	        width: 350px;
+	        width: 300px;
 	        height: 250px;  
       } 
 
     .grid-container .img-curso{
     
-        display: none;
   	    text-align: center;
 
 	}
