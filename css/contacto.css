@@ -231,12 +231,21 @@
 
 }
 
+
+
   .grid-container .widget-contactos{
-            display: block;
+       display: none;
   }
 
+  .grid-container .widget-mapa {
+            display: block;
+	        width: 450px;
+	        height: 350px;  
+      }
+
+
   .grid-container .widget-sucursales{
-    display: block;
+       display: block;
   
   }
 
@@ -276,12 +285,6 @@
   	    text-align: center;
 
 	}
-  .grid-container .widget-mapa {
-            display: none;
-	        width: 450px;
-	        height: 350px;  
-      }
-
 
 
 	
