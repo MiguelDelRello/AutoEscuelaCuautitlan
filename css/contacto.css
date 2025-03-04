@@ -214,13 +214,13 @@
       display: grid;
       grid-template-areas:
          'header'
-        'widget-contacto'
+ /*       'widget-contacto'
         'widget-titulo'
         'widget-contactos'
         'widget-mapa'
         'widget-sucursales'
         'widget-nota'
-        'widget-carrusel'
+        'widget-carrusel'*/
         'logo'
         'contacto'
         'footer'
@@ -278,7 +278,7 @@
   	    text-align: center;
 
 	}
-  .grid-container .widget-mapa iframe{
+  .grid-container .widget-mapa {
 	        width: 450px;
 	        height: 350px;  
       }
@@ -297,7 +297,14 @@
         justify-content: none;
         border-top: none;        
 
+
+
     }
+.imgFondo{
+      height: 100%; /* Toda la altura de la ventana */
+      width: 100%;
+      	
+}
 
 
  }     
