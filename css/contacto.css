@@ -278,6 +278,12 @@
   	    text-align: center;
 
 	}
+  .grid-container .widget-mapa iframe{
+	        width: 250px;
+	        height: 250px;  
+      }
+
+
 
 	
     .grid-container .logo{
