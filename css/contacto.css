@@ -276,7 +276,7 @@
 
     .grid-container .img-curso{
   	    text-align: center;
-        width: 100%;
+
 	}
 
 
@@ -284,7 +284,6 @@
 	
     .grid-container .logo{
    	    text-align: center;
-   	    width: 100%;
         height: 300px;		    
 }	
     .grid-container .contacto{
@@ -293,7 +292,7 @@
         display: block;
         justify-content: none;
         border-top: none;        
-        width: 100%;
+
 
 
     }
