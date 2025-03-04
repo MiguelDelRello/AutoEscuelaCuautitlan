@@ -237,7 +237,8 @@
   }
 
   .grid-container .widget-sucursales{
-        padding: 70px;
+    display: block;
+	padding: 70px;
   
   }
 
