@@ -239,9 +239,14 @@
 
   .grid-container .widget-mapa {
             display: block;
+      }
+
+  .grid-container .widget-mapa iframe{          
 	        width: 450px;
 	        height: 350px;  
       }
+
+
 
 
   .grid-container .widget-sucursales{
