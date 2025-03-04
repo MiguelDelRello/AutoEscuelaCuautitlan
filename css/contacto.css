@@ -95,7 +95,7 @@
             background-color: white;
             text-align: center;
              justify-content: space-between;
-            padding: 70px;			
+            padding: 100px;			
   }
  
    .grid-container .widget-contactos{
@@ -105,7 +105,7 @@
             background-color: white;
             text-align: center;
              justify-content: space-between;
-            padding: 70px;			     
+            padding: 20px;			     
       
    }    
    .sucursal{
@@ -235,6 +235,7 @@
 
   .grid-container .widget-contactos{
        display: none;
+       padding: 10px;
   }
 
   .grid-container .widget-mapa {
@@ -251,7 +252,7 @@
 
   .grid-container .widget-sucursales{
        display: block;
-  
+       padding: 10px;
   }
 
 
