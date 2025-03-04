@@ -8,8 +8,8 @@
 
 .imgFondo{
 	  position:fixed;
-      height: 70%; /* Toda la altura de la ventana */
-      width: 70%;	
+      height: 50%; /* Toda la altura de la ventana */
+      width: 50%;	
       top: 0; /* Elimina el margen por defecto del body */
       left: 0;
       z-index: 0;
