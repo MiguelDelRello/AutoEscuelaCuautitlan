@@ -279,7 +279,7 @@
 
 	}
   .grid-container .widget-mapa {
-            display:block;
+            display: none;
 	        width: 450px;
 	        height: 350px;  
       }
@@ -288,10 +288,12 @@
 
 	
     .grid-container .logo{
+     display: none;
    	    text-align: center;
         height: 300px;		    
 }	
     .grid-container .contacto{
+        display: none;
         padding: 0;
   	    text-align: center;
         display: block;
