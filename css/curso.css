@@ -8,7 +8,7 @@
 
 .imgFondo{
 	  position:fixed;
-      height: 100%; /* Toda la altura de la ventana */
+      height: 80%; /* Toda la altura de la ventana */
       width: 100%;	
       top: 0; /* Elimina el margen por defecto del body */
       z-index: 0;
@@ -167,11 +167,6 @@
   @media(max-width: 768px){
 
 	
-.imgFondo{
-      height: 100%; /* Toda la altura de la ventana */
-      width:  100%;
-      	
-}  
   
  	  .grid-container {
       margin: 0;
