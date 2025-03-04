@@ -161,8 +161,8 @@
 
 	
 .imgFondo{
-      height: 70%; /* Toda la altura de la ventana */
-      width:  70%;
+      height: 100%; /* Toda la altura de la ventana */
+      width:  100%;
       	
 }  
   
@@ -198,8 +198,8 @@
    } 
 
   .grid-container .header .img{
-			width: 270px; 
-			height:270px;	
+			width: 220px; 
+			height:220px;	
       } 
 
   .grid-container .header .navbar{
