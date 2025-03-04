@@ -234,7 +234,7 @@
 
 
   .grid-container .widget-contactos{
-       display: none;
+       display: block;
        padding: 10px;
   }
 
