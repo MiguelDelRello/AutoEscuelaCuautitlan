@@ -185,17 +185,14 @@
 	
    } 
 
-
-
     .grid-container .widget-descripcion{
   	    text-align: center;
 
 	}
 	
     .grid-container .logo{
-     width: 100%;
-     height: 300px;		    
-     text-align: center; 
+   	    text-align: center;
+        height: 300px;		    
 }	
     .grid-container .contacto{
         padding: 0;
@@ -203,13 +200,12 @@
         display: block;
         justify-content: none;
         border-top: none;        
-
     }
-.imgFondo{
-      height: 100%; /* Toda la altura de la ventana */
+/*.imgFondo{
+      height: 100%; 
       width: 100%;
       	
-}
+}*/
 
 
  }     
