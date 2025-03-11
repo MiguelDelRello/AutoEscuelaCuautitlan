@@ -80,7 +80,7 @@
      		padding: 70px;    
       }
       
- .grid-container .widget-comentario textarea,input{
+ .grid-container .widget-comentario textarea,input,select{
     background-color: #f1f7f7;  
  }      
       

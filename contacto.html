@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/carrusel.css">
+
 <title>Auto Escuela Cuautitl&aacute;n</title>
 </head>
 <body>
@@ -99,10 +100,19 @@
 <div class="widget-comentario">
     <input type="text" id="nombre" name="nombre" placeholder="Nombre"><br>
     <input type="text" id="apellido" name="apellido" placeholder="Apellido"><br>
-    <input type="text" id="curso" name="curso" placeholder="Curso de tu interes"><br>
+	<select id="curso" name="curso" required >
+		      <option value="select">Seleccionar curso</option>
+		      <option value="Aprendiz">Aprendiz</option>
+		      <option value="Finde">Fin de Semana</option>
+		      <option value="Combo">Combo</option>
+		      <option value="Intensivo">Intensivo</option>
+		      <option value="Mix">Mix</option>
+		      <option value="Uber">Uber</option>
+		    </select>
+	<br>
     <input type="text" id="email" name="email" placeholder="Email"><br>
     <textarea id="mensaje" name="mensaje" placeholder="Mensaje"> </textarea><br>
-    <button>Enviar comentario</button>
+    <button id="btnComentario" type="submit" >Enviar comentario</button>
 </div>
 
 
@@ -224,12 +234,12 @@
 
 </div>
 
-
-
-
-
-
-
 </div>
+
+
+
+
+
+
 </body>
 </html>
