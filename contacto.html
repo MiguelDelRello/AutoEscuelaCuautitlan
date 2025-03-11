@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/carrusel.css">
-
+	<script src="js/comentarios.js"></script>
 <title>Auto Escuela Cuautitl&aacute;n</title>
 </head>
 <body>
@@ -97,10 +97,12 @@
 
 </div>
 
+
 <div class="widget-comentario">
+	<form id="form">
     <input type="text" id="nombre" name="nombre" placeholder="Nombre"><br>
     <input type="text" id="apellido" name="apellido" placeholder="Apellido"><br>
-	<select id="curso" name="curso" required >
+	<select id="curso" name="curso"  >
 		      <option value="select">Seleccionar curso</option>
 		      <option value="Aprendiz">Aprendiz</option>
 		      <option value="Finde">Fin de Semana</option>
@@ -111,9 +113,18 @@
 		    </select>
 	<br>
     <input type="text" id="email" name="email" placeholder="Email"><br>
+    
+    Mensaje: <br>
     <textarea id="mensaje" name="mensaje" placeholder="Mensaje"> </textarea><br>
-    <button id="btnComentario" type="submit" >Enviar comentario</button>
+    <button id="button" type="submit" >Enviar comentario</button>
+	</form>
 </div>
+
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">emailjs.init('Sut8vJS6Rg6K_gC0N')</script>
 
 
 

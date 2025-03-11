@@ -1,63 +1,43 @@
-import { readFile, writeFile } from 'fs';
-import { join } from 'path';
+    document.addEventListener('DOMContentLoaded', function() {
+        (function() {
+            emailjs.init("Sut8vJS6Rg6K_gC0N"); // Reemplaza TU_USER_ID con tu ID de usuario de EmailJS
+        })();
+        
+        document.getElementById('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
 
-const filePath = join(__dirname, 'comentarios.json');
+            // Obtener el formulario directamente
+            const form = document.getElementById('form');
 
-function agregarRegistro(nuevoRegistro) {
-    // Leer el archivo JSON existente
-    readFile(filePath, 'utf8', (err, data) => {
-        if (err) {
-            console.error('Error al leer el archivo:', err);
-            return;
-        }
-
-        // Parsear el contenido del archivo JSON
-        let registros;
-        try {
-            registros = JSON.parse(data);
-        } catch (parseError) {
-            console.error('Error al parsear el JSON:', parseError);
-            return;
-        }
-
-        // Agregar el nuevo registro
-        registros.push(nuevoRegistro);
-
-        // Escribir el nuevo contenido en el archivo JSON
-        writeFile(filePath, JSON.stringify(registros, null, 2), (writeErr) => {
-            if (writeErr) {
-                console.error('Error al escribir en el archivo:', writeErr);
-                return;
-            }
-            console.log('Registro agregado exitosamente.');
-        });
-    });
-}
-
-
-			 var nombre   = document.getElementById('nombre');
-			 var apellido   = document.getElementById('apellido');			 
-			 var curso    = document.getElementById('curso');
-			 var email   = document.getElementById('email');
-			 var mensaje   = document.getElementById('mensaje');
-
-function nuevo (){
-// Ejemplo de uso
-const nuevoRegistro = {
-    nombre: nombre,
-    apellido: apellido, 
-    curso: curso,
-    email: email,
-    mensaje: mensaje
-};
-
-agregarRegistro(nuevoRegistro);
-
-}
-
-        document.addEventListener("DOMContentLoaded", function() {
-            // Obtener el botón por su ID y agregar el evento click
-            const boton = document.getElementById("btnComentario");
-            boton.addEventListener("click", nuevo);
+            emailjs.sendForm('default_service', 'template_e8dvzyr', form)
+                .then(function() {
+                    alert('Correo enviado con éxito!');
+                    form.reset(); // Opcional: reinicia el formulario después de enviar
+                }, function(error) {
+                    alert('Error al enviar el correo: ' + JSON.stringify(error));
+                });
         });
 
+});
+/*
+const btn = document.getElementById("button")
+
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+ 
+
+
+  const serviceID = "default_service"
+  const templateID = "template_e8dvzyr"
+
+  emailjs.sendForm(serviceID, templateID, this).then(
+    () => {
+      alert("Sent!")
+    },
+    (err) => {
+      alert(JSON.stringify(err))
+    },
+  )
+});
+*/
