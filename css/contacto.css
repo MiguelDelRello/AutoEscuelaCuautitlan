@@ -355,7 +355,7 @@
 }
  .grid-container .widget-comentario form textarea,input,select{
     width: 250px;
-    
+    margin: 0;    
  }      
 
 
