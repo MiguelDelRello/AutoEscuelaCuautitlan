@@ -355,11 +355,10 @@
 }
  .grid-container .widget-comentario form textarea,input,select{
     width: 250px;
-    margin: 0;    
  }      
 
   .grid-container .widget-comentario{
-  padding: 15px;
+  padding: 45px;
 }
 
  }     
