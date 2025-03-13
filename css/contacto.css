@@ -358,6 +358,8 @@
     margin: 0;    
  }      
 
-
+  .grid-container .widget-comentario{
+  padding: 15px;
+}
 
  }     
