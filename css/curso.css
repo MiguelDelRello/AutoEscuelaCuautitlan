@@ -8,9 +8,10 @@
 
 .imgFondo{
 	  position:fixed;
-      height: 80%; /* Toda la altura de la ventana */
+      height: 70%; /* Toda la altura de la ventana */
       width: 100%;	
       top: 0; /* Elimina el margen por defecto del body */
+      left: 0;
       z-index: 0;
 }
 
@@ -43,7 +44,7 @@
 
 	    .grid-container .header {
 	    grid-area: header;
-	    height: 300px;
+	    height: 400px;
         display: flex;
         border: none;
         overflow: hidden;
